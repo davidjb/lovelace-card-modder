@@ -54,7 +54,7 @@ class CardModder extends cardTools.LitElement {
   }
 
   async _cardMod(root) {
-    if(!this._config.style) return;
+    if(!this._config.style && !this._config.extra_styles) return;
 
     let recursiveRoots = null
     if (root._cards) {
